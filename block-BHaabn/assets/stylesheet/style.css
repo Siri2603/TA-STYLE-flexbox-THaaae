@@ -56,6 +56,16 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* General */
 
 .container {
@@ -71,7 +81,7 @@ body {
 
   /* Header */
 
-  .header {
+.header {
     background-color: #0c122b;
     padding: 10px 0;
     position: fixed;
@@ -80,17 +90,17 @@ body {
 .brand img {
     width: 120px;
   }
-.green a {
-    color: green;
-}
 .nav a {
     font-size: 20px;
     color: #ffffff;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: uppercase;
     margin-left: 30px;
   }
- 
+.nav .active {
+    color: green;
+    font-weight: 600;
+}
  /* Gallery */
 
  .gallery {
@@ -102,36 +112,34 @@ body {
 }
 .heading {
     text-align: center;
-    color: #0c122b;
+    color: maroon;
     font-size: 42px;
     margin-bottom: 32px;
+    text-transform: uppercase;
 }
 .row-col {
+    flex: 0 1 30%;
     width: 30%;
     margin: 16px 0;
 }
 .gallery img {
     width: 100%;
-    border-radius: 8px;
-    border: 3px solid #0c122b;
     height: 300px;
     object-fit: cover;
     -o-object-fit: cover;
+    border-radius: 2px;
 }
 /* Footer */
 
 .footer {
   background-color: #0c122b;
-  padding: 32px 0;
-  text-align: right;
+  padding: 32px 0;  
+  color: #ffffff;
+  font-size: 20px;
 }
 .footer a {
   font-size: 20px;
   color: #ffffff;
-  margin: 0 20px;
+  margin-left: 32px;
 }
-small {
-    color: #ffffff;
-    display: flex;
-    justify-content: left;
-}
+
